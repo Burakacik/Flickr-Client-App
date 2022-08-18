@@ -1,1 +1,1 @@
-# Patika_FlickrClientApp
+# Flickr-Client-App
