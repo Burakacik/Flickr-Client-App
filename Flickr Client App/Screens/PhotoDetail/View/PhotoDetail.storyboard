@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2Ch-hn-YVo">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2Ch-hn-YVo">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="560"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="560" id="Nyc-OF-KU7"/>
@@ -50,12 +50,12 @@
                         <constraints>
                             <constraint firstItem="2Ch-hn-YVo" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="5hX-Jg-xux"/>
                             <constraint firstItem="M0m-hg-rU3" firstAttribute="top" secondItem="JDM-Kv-ueF" secondAttribute="bottom" constant="8" symbolic="YES" id="5zp-oT-cEE"/>
+                            <constraint firstItem="2Ch-hn-YVo" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="823-fO-Lm7"/>
                             <constraint firstItem="yXa-9Q-mWl" firstAttribute="leading" secondItem="JDM-Kv-ueF" secondAttribute="trailing" constant="8" symbolic="YES" id="DSr-5i-CaM"/>
                             <constraint firstItem="2Ch-hn-YVo" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="Fr1-a4-NmG"/>
                             <constraint firstItem="M0m-hg-rU3" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="Lwx-69-wuh"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="yXa-9Q-mWl" secondAttribute="trailing" constant="20" id="RZt-nD-hVh"/>
                             <constraint firstItem="JDM-Kv-ueF" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="S57-7S-b2T"/>
-                            <constraint firstItem="2Ch-hn-YVo" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="TzP-CG-Ex3"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="M0m-hg-rU3" secondAttribute="trailing" constant="20" id="a2F-hg-yVx"/>
                             <constraint firstItem="yXa-9Q-mWl" firstAttribute="top" secondItem="2Ch-hn-YVo" secondAttribute="bottom" constant="8" symbolic="YES" id="bo6-a4-8oU"/>
                             <constraint firstItem="JDM-Kv-ueF" firstAttribute="top" secondItem="2Ch-hn-YVo" secondAttribute="bottom" constant="8" symbolic="YES" id="pXy-Po-8do"/>

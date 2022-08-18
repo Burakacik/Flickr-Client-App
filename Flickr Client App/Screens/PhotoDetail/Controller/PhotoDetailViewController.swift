@@ -8,6 +8,9 @@
 import UIKit
 
 class PhotoDetailViewController: UIViewController {
+    
+    var photo: Photo?
+    
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var ownerImageView: UIImageView!
     @IBOutlet weak var ownerNameLabel: UILabel!
@@ -17,22 +20,26 @@ class PhotoDetailViewController: UIViewController {
         super.viewDidLoad()
         
         title = "Photo Detail"
-        imageView.backgroundColor = .gray
-        ownerImageView.backgroundColor = .darkGray
-        ownerNameLabel.text = "Owner Name"
-        descriptionLabel.text = "Description Label Description Label Description Label Description Label Description Label Description Label Description Label Description Label"
-
+        
+//        imageView.backgroundColor = .gray
+//        ownerImageView.backgroundColor = .darkGray
+//        ownerNameLabel.text = "Owner Name"
+//        descriptionLabel.text = "Description Label Description Label Description Label Description Label Description Label"
+        ownerImageView.layer.cornerRadius = 24.0
+        ownerNameLabel.text = photo?.ownername
+        title = photo?.title
+        
+        NetworkManager.shared.fetchImage(with: photo?.buddyIconURL) { data in
+            self.ownerImageView.image = UIImage(data: data)
+        }
+        
+        NetworkManager.shared.fetchImage(with: photo?.urlZ) { data in
+            self.imageView.image = UIImage(data: data)
+        }
+        
+        descriptionLabel.text = photo?.photoDescription?.content
+        
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

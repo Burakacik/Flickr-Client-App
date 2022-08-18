@@ -13,6 +13,7 @@
 		AD1511C328AB96DD00DC5620 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD1511C128AB96DD00DC5620 /* Main.storyboard */; };
 		AD1511C528AB96DF00DC5620 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD1511C428AB96DF00DC5620 /* Assets.xcassets */; };
 		AD1511C828AB96DF00DC5620 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD1511C628AB96DF00DC5620 /* LaunchScreen.storyboard */; };
+		AD8D5B6928ADACF30081E8F5 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8D5B6828ADACF30081E8F5 /* NetworkManager.swift */; };
 		ADDB005E28AB9D1F00BA71F6 /* PhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDB005D28AB9D1F00BA71F6 /* PhotoTableViewCell.swift */; };
 		ADDB006128AB9FF400BA71F6 /* PhotoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDB006028AB9FF400BA71F6 /* PhotoDetailViewController.swift */; };
 		ADDB006728ABA0D200BA71F6 /* PhotoDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADDB006628ABA0D200BA71F6 /* PhotoDetail.storyboard */; };
@@ -30,6 +31,7 @@
 		AD1511C428AB96DF00DC5620 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD1511C728AB96DF00DC5620 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD1511C928AB96DF00DC5620 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD8D5B6828ADACF30081E8F5 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		ADDB005D28AB9D1F00BA71F6 /* PhotoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTableViewCell.swift; sourceTree = "<group>"; };
 		ADDB006028AB9FF400BA71F6 /* PhotoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailViewController.swift; sourceTree = "<group>"; };
 		ADDB006628ABA0D200BA71F6 /* PhotoDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PhotoDetail.storyboard; sourceTree = "<group>"; };
@@ -97,8 +99,8 @@
 		AD1511D128AB970D00DC5620 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				AD1511BB28AB96DD00DC5620 /* AppDelegate.swift */,
-				AD1511BD28AB96DD00DC5620 /* SceneDelegate.swift */,
+				AD8D5B6628ADACBB0081E8F5 /* Core */,
+				AD8D5B6528ADACAA0081E8F5 /* Delegates */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -111,6 +113,31 @@
 				ADDB006228ABA03B00BA71F6 /* View */,
 			);
 			path = RecentPhotos;
+			sourceTree = "<group>";
+		};
+		AD8D5B6528ADACAA0081E8F5 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				AD1511BB28AB96DD00DC5620 /* AppDelegate.swift */,
+				AD1511BD28AB96DD00DC5620 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		AD8D5B6628ADACBB0081E8F5 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				AD8D5B6728ADACCF0081E8F5 /* Networking */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		AD8D5B6728ADACCF0081E8F5 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				AD8D5B6828ADACF30081E8F5 /* NetworkManager.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		ADDB005F28AB9FBA00BA71F6 /* PhotoDetail */ = {
@@ -237,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD8D5B6928ADACF30081E8F5 /* NetworkManager.swift in Sources */,
 				ADDB006E28ABC8BC00BA71F6 /* Photo.swift in Sources */,
 				ADDB005E28AB9D1F00BA71F6 /* PhotoTableViewCell.swift in Sources */,
 				AD1511C028AB96DD00DC5620 /* RecentPhotosTableViewController.swift in Sources */,
